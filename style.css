@@ -1,7 +1,9 @@
-<style>
       body {
         margin: 0px; /*Margem externa*/
         padding: 0px; /*Margem interna*/
+        background: linear-gradient(180deg, blue 19.91%, #303030 45%) #303030;
+        background-repeat: no-repeat;
+
       }
 
       #principal {
@@ -47,4 +49,93 @@
         box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
         cursor: pointer;
       }
-    </style>
+
+      /* Seção principal do site */
+
+      section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        
+      }
+
+      header{
+        color: white;
+        font-family: 'inter';
+
+
+      }
+      header h1{
+        font-size: 80px;
+        font-weight: 800;
+        text-transform: uppercase;
+        
+      }
+
+      .diferente{
+        background-color: black;
+        text-transform: uppercase;
+      }
+
+       form{
+        color: white;
+        font-family: 'inter';
+        font-size: 25px;
+        font-weight: 600;
+        width: 500px;
+       }
+
+       .form-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+       }
+
+       form input{
+        border-radius: 10px;
+        height: 30px;
+        border: 0px;
+        font-size: 20px;
+        padding: 10px;
+        background-color: rgba (255, 255, 255, 0,9);
+       }
+
+       form label{
+        margin: 10px 0px 10px 0px;
+       }
+
+       form input::placeholder{
+        color: (57, 57, 57, 0,5);
+       }
+
+       .itens label{
+        font-size: 20px;
+       }
+
+       .itens{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       input[type="checkbox"]{
+        transform: scale(1.5);
+       }
+
+       input[type="submit"]{
+        background-color: #0c70f2;
+        width: 100%;
+        height: 50px;
+        font-family: 'inter';
+        font-size: 32px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 70px;
+        cursor: pointer;
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+       }
